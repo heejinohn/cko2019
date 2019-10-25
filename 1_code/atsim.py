@@ -8,6 +8,7 @@ atsim = pd.read_csv('/scratch/ou/hohn/upload.csv', index_col=['gvkey1', 'gvkey2'
 for filename in os.listdir(directory):
     if filename.endswith('.txt'):
         tnic = pd.read_csv(os.path.join(directory, filename), delimiter='\t', header=0, index_col=['gvkey1', 'gvkey2', 'year'])
-        atsim = atsim.join(tnic, how='left', sort=True)
+        atsim = atsim.merge(tnic, how='left', left_index=True, right_index=True)
+        del tnic
     
 atsim.to_csv('/scratch/ou/hohn/atsim.csv')
