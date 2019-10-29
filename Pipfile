@@ -11,12 +11,10 @@ numpy = "*"
 jupyter = "*"
 pyvim = "*"
 jupyterlab = "*"
-seaborn = "*"
-plotly = "*"
 scipy = "*"
 sklearn = "*"
 pandoc = "*"
 rpy2 = "*"
 
 [requires]
-python_version = "3.6"
+python_version = "3.7"

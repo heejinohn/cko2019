@@ -1,4 +1,4 @@
 #!/bin/bash
 #$ -cwd
-source ~/virtualenv/bin/activate
+source /home/ou/hohn/miniconda3/bin/activate
 python3 /home/ou/hohn/tnic_industry.py
