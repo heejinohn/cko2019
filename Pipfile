@@ -8,6 +8,7 @@ pyvim = "*"
 pyflakes = "*"
 pylint = "*"
 isort = "*"
+nbdime = "*"
 
 [packages]
 pandas = "*"

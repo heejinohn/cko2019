@@ -4,3 +4,4 @@ requirement.txt filter=lfs diff=lfs merge=lfs -text
 2_pipeline/Readme_tnic3.txt filter=lfs diff=lfs merge=lfs -text
 2_pipeline/tnic3_data.txt filter=lfs diff=lfs merge=lfs -text
 2_pipeline/tnic_industry.pkl filter=lfs diff=lfs merge=lfs -text
+2_pipeline/tnic_ind_update.pkl filter=lfs diff=lfs merge=lfs -text
