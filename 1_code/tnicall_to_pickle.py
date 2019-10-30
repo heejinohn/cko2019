@@ -4,12 +4,14 @@ import os
 
 directory = '/scratch/ou/hohn/TNIC_AllPairsDistrib/'
 for filename in os.listdir(directory):
-    if filename.endswith('.pickle'):
-        tnic = pd.read_pickle(os.path.join(directory, filename))
+    if filename.endswith('.txt'):
+        tnic = pd.read_csv(os.path.join(directory, filename),
+                           delimiter='\t', usecols=['gvkey1', 'year', 'gvkey2','score'],
+                           dtype={'gvkey1':'int16', 'gvkey2':'int16', 'year':'int16', 'score':'float64'},
+                           na_values='nan')
+        tnic = tnic[['gvkey1', 'year', 'gvkey2', 'score']]
         tnic.dropna(inplace=True)
-        for i in range(3):
-            tnic.index.set_levels(abs(tnic.index.levels[i]), level=i, inplace=True, verify_integrity=False)
-        tnic = tnic.reorder_levels(['gvkey1', 'year', 'gvkey2'])
-        tnic.to_pickle(os.path.join(directory, filename[:-6] + 'pklz'), compression='gzip')
+        tnic.drop_duplicates(subset=['gvkey1', 'year', 'gvkey2'], inplace=True)
+        tnic.set_index(['gvkey1', 'year', 'gvkey2'], inplace=True)
+        tnic.to_pickle(os.path.join(directory, filename[:-3] + 'pkl'), compression='gzip')
         del tnic
-        os.remove(os.path.join(directory, filename))
