@@ -17,9 +17,9 @@ for filename in os.listdir(directory):
             tnic_industry.update(tnic, join='left', overwrite=False)
             tnic_industry.index = tnic_industry.index.set_levels(tnic_industry.index.levels[1] + 1, level=1)
             tnic_industry.rename(columns={'score':'score' + '_' + str(i)})
+        tnic.to_pickle(os.path.join(directory, filename[:-3] + 'pickle'))
         del tnic
 
         tnic_industry.index = tnic_industry.index.set_levels(tnic_industry.index.levels[1] - 3, level=1)
-        tnic.to_pickle(os.path.join(directory, filename[:-3] + 'pickle'))
 
 tnic_industry.to_pickle('/scratch/ou/hohn/tnic_industry.pickle')

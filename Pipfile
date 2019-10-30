@@ -4,12 +4,12 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+pyvim = "*"
 
 [packages]
 pandas = "*"
 numpy = "*"
 jupyter = "*"
-pyvim = "*"
 jupyterlab = "*"
 scipy = "*"
 sklearn = "*"
