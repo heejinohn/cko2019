@@ -9,6 +9,7 @@ pyflakes = "*"
 pylint = "*"
 isort = "*"
 nbdime = "*"
+neovim = "*"
 
 [packages]
 pandas = "*"
@@ -19,6 +20,7 @@ scipy = "*"
 sklearn = "*"
 pandoc = "*"
 rpy2 = "*"
+wrds = "*"
 
 [requires]
 python_version = "3.7"
