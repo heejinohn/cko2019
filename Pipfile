@@ -10,6 +10,7 @@ pylint = "*"
 isort = "*"
 nbdime = "*"
 neovim = "*"
+autopep8 = "*"
 
 [packages]
 pandas = "*"
@@ -21,6 +22,7 @@ sklearn = "*"
 pandoc = "*"
 rpy2 = "*"
 wrds = "*"
+pep8 = "*"
 
 [requires]
 python_version = "3.7"
