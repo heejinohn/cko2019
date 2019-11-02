@@ -4,25 +4,25 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-pyvim = "*"
+neovim = "*"
+nbdime = "*"
+autopep8 = "*"
+jupyterlab = "*"
 pyflakes = "*"
 pylint = "*"
 isort = "*"
-nbdime = "*"
-neovim = "*"
-autopep8 = "*"
+pandoc = "*"
+pyvim = "*"
+
 
 [packages]
 pandas = "*"
 numpy = "*"
 jupyter = "*"
-jupyterlab = "*"
-scipy = "*"
-sklearn = "*"
-pandoc = "*"
 rpy2 = "*"
 wrds = "*"
-pep8 = "*"
+pandas-profiling = "*"
+dask = {extras = ["array"],version = "*"}
 
 [requires]
 python_version = "3.7"
