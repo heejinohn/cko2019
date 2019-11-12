@@ -24,6 +24,7 @@ pandas-profiling = "*"
 dask = {extras = ["array"],version = "*"}
 scipy = "*"
 pandasql = "*"
+matplotlib = "*"
 
 [requires]
 python_version = "3.7"
