@@ -1,7 +1,6 @@
 """
 tnic_industry.py
 """
-import numpy as np
 import os
 import pandas as pd
 DIRECTORY = '/scratch/ou/hohn/TNIC_AllPairsDistrib/'

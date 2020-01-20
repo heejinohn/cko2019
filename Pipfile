@@ -21,10 +21,10 @@ jupyter = "*"
 rpy2 = "*"
 wrds = "*"
 pandas-profiling = "*"
-dask = {extras = ["array"],version = "*"}
 scipy = "*"
 pandasql = "*"
 matplotlib = "*"
+dask = {extras = ["dataframe"],version = "*"}
 
 [requires]
 python_version = "3.7"
