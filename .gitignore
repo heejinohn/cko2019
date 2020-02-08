@@ -1,4 +1,9 @@
 1_code/.ipynb_checkpoints/*
 0_data/external/sdc/*
 2_pipeline/sdc.pkl
-
+2_pipeline/PrivCo.xlsx
+2_pipeline/cw.dta
+2_pipeline/sdc.csv
+2_pipeline/sdc_cusip.csv
+2_pipeline/tnic_ind_update.pkl
+2_pipeline/tnic_industry.pkl
