@@ -7,4 +7,5 @@
 2_pipeline/sdc_cusip.csv
 2_pipeline/tnic_ind_update.pkl
 2_pipeline/tnic_industry.pkl
-
+Pipfile
+Pipfile.lock
